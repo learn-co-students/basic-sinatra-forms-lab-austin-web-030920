@@ -9,13 +9,6 @@ class App < Sinatra::Base
     post '/newteam' do
         # binding.pry
         # puts params
-        @team_name = params[:name]
-        @coach = params[:coach]
-        @pg = params[:pg]
-        @sg = params[:sg]
-        @sf = params[:sf]
-        @pf = params[:pf]
-        @c = params[:c]
         erb :team
         
     end
