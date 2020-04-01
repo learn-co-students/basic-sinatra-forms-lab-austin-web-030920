@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require 'pry'
 
 class App < Sinatra::Base
 
@@ -6,17 +7,18 @@ class App < Sinatra::Base
         erb :newteam
     end
 
-    post "/newteam" do
-        #puts params
-       
+    post '/newteam' do
+        
+        # puts params
         @team_name = params[:name]
         @coach = params[:coach]
-        @p_guard = params[:pg]
-        @s_guard = params[:sg]
-        @s_forward = params[:sf]
-        @p_forward = params[:pf]
-        @center = params[:c]
-        erb = :team
+        @pg = params[:pg]
+        @sg = params[:sg]
+        @sf = params[:sf]
+        @pf = params[:pf]
+        @c = params[:c]
+        erb :team
+        
     end
 
 
