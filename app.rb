@@ -11,11 +11,11 @@ class App < Sinatra::Base
        
         @team_name = params[:name]
         @coach = params[:coach]
-        @p_guard = params[:p_guard]
-        @s_guard = params[:s_guard]
-        @s_forward = params[:s_forward]
-        @p_forward = params[:p_forward]
-        @center = params[:center]
+        @p_guard = params[:pg]
+        @s_guard = params[:sg]
+        @s_forward = params[:sf]
+        @p_forward = params[:pf]
+        @center = params[:c]
         erb = :team
     end
 
